@@ -1,0 +1,373 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Gestion de Opiniones",
+    "dateExported": "2024-03-01T21:36:29.300Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "125b2a95-cb29-4b53-8a5c-d2f6ebf44fa8",
+            "name": "user",
+            "containerId": "",
+            "created": "2024-03-01T19:37:40.487Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "8f8d791e-8d04-4b8a-9964-d613b49355a3",
+            "name": "Post",
+            "containerId": "",
+            "created": "2024-03-01T19:37:40.488Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "6993e8ed-42b7-4c70-acab-a5d7b0533f81",
+            "name": "Comment",
+            "containerId": "",
+            "created": "2024-03-01T19:37:40.489Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "3d4ae158-a725-4991-be3a-72fc33814c69",
+            "name": "category",
+            "containerId": "",
+            "created": "2024-03-01T23:15:26.195Z",
+            "sortNum": 40000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "212a20d2-0bfa-482a-b13e-92178efe6d6e",
+            "colId": "6a8071b3-f560-4378-9df8-f1141b0a8eb6",
+            "containerId": "125b2a95-cb29-4b53-8a5c-d2f6ebf44fa8",
+            "name": "register",
+            "url": "/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-01T19:37:40.487Z",
+            "modified": "2024-03-01T19:37:40.487Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Fabrico Lisandro"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "Lopez Teleguario"
+                    },
+                    {
+                        "name": "username",
+                        "value": "Fteleguario"
+                    },
+                    {
+                        "name": "password",
+                        "value": "wmn"
+                    },
+                    {
+                        "name": "email",
+                        "value": "Flopez@gmail.com"
+                    },
+                    {
+                        "name": "age",
+                        "value": "20"
+                    },
+                    {
+                        "name": "phone",
+                        "value": "45670987"
+                    },
+                    {
+                        "name": "role",
+                        "value": "user"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "d47353fd-c4dd-4e36-8afa-d1107350a255",
+            "colId": "6a8071b3-f560-4378-9df8-f1141b0a8eb6",
+            "containerId": "8f8d791e-8d04-4b8a-9964-d613b49355a3",
+            "name": "save",
+            "url": "/Post/save",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-03-01T19:37:40.489Z",
+            "modified": "2024-03-01T21:25:43.111Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "title",
+                        "value": "Ofertas del año 2022"
+                    },
+                    {
+                        "name": "content",
+                        "value": "Por un período de tiempo limitado, estamos ofreciendo ACCESO DE POR VIDA a Doodly por un PAGO ÚNICO DE $67 (Precio regular: $468/año)"
+                    },
+                    {
+                        "name": "author",
+                        "value": "65e135629632a78846825c62"
+                    },
+                    {
+                        "name": "category",
+                        "value": "65e26222f5690122f9a734b6"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "db600734-ee80-4960-b722-0bb84b473a0b",
+            "colId": "6a8071b3-f560-4378-9df8-f1141b0a8eb6",
+            "containerId": "125b2a95-cb29-4b53-8a5c-d2f6ebf44fa8",
+            "name": "update",
+            "url": "/update/65e135629632a78846825c62",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-03-01T19:37:40.490Z",
+            "modified": "2024-03-02T01:00:26.486Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxMzU2Mjk2MzJhNzg4NDY4MjVjNjIiLCJ1c2VybmFtZSI6ImZsb3BleiIsIm5hbWUiOiJGYWJyaWNpbyIsImVtYWlsIjoiRmxvcGV6QGdtYWlsLmNvbSIsInJvbGUiOiJVU0VSIiwiaWF0IjoxNzA5MzM5MDQ1LCJleHAiOjE3MDkzNDk4NDV9.qEIpNAtAlSZxm6zD2wXVU-aSM5Za5QuiBSDdfvmlhJQ"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "flopez"
+                    },
+                    {
+                        "name": "password",
+                        "value": "wen"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "e6ef3596-08c9-4696-bf92-05236db2adf2",
+            "colId": "6a8071b3-f560-4378-9df8-f1141b0a8eb6",
+            "containerId": "8f8d791e-8d04-4b8a-9964-d613b49355a3",
+            "name": "delete",
+            "url": "/Post/delete/65e24b5b327f1eee621c2966",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2024-03-01T19:37:40.492Z",
+            "modified": "2024-03-01T22:16:31.621Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxNWFhNmUwOTU0OGJiMTgyN2YxOTQiLCJ1c2VybmFtZSI6ImhqdWFyZXoiLCJuYW1lIjoiSGFucyIsImVtYWlsIjoiaGp1YXJlekBnbWFpbC5jb20iLCJyb2xlIjoiVVNFUiIsImlhdCI6MTcwOTMzMTMzNywiZXhwIjoxNzA5MzQyMTM3fQ.Ix27rhSw2BUY8M-xfeUVS-AkGzKhDMnK8QMIJ2-KZwg"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "1ee7e213-e5f5-4b8b-8831-85c22c5550f8",
+            "colId": "6a8071b3-f560-4378-9df8-f1141b0a8eb6",
+            "containerId": "125b2a95-cb29-4b53-8a5c-d2f6ebf44fa8",
+            "name": "login Copy",
+            "url": "/login",
+            "method": "POST",
+            "sortNum": 55000,
+            "created": "2024-03-01T20:07:11.346Z",
+            "modified": "2024-03-01T20:07:55.143Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "flopez"
+                    },
+                    {
+                        "name": "password",
+                        "value": "wen"
+                    },
+                    {
+                        "name": "email",
+                        "value": "Flopez@gmail.com"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "446947fb-2e1d-436a-86bf-30c7233ce57e",
+            "colId": "6a8071b3-f560-4378-9df8-f1141b0a8eb6",
+            "containerId": "6993e8ed-42b7-4c70-acab-a5d7b0533f81",
+            "name": "save",
+            "url": "/comment/save",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-03-01T19:37:40.493Z",
+            "modified": "2024-03-01T19:37:40.493Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "content",
+                        "value": "Que interesante"
+                    },
+                    {
+                        "name": "author",
+                        "value": "65e1dd126a7212456093c536"
+                    },
+                    {
+                        "name": "publication",
+                        "value": "65e211a9592c3c78ca2c346c"
+                    },
+                    {
+                        "name": "createdAt",
+                        "value": "2024/03/01"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "52ed2e85-3e78-431d-8b7c-90a118b04731",
+            "colId": "6a8071b3-f560-4378-9df8-f1141b0a8eb6",
+            "containerId": "125b2a95-cb29-4b53-8a5c-d2f6ebf44fa8",
+            "name": "test",
+            "url": "/test",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-03-01T19:37:40.494Z",
+            "modified": "2024-03-01T19:37:40.494Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxZGQxMjZhNzIxMjQ1NjA5M2M1MzYiLCJ1c2VybmFtZSI6ImhqdWFyZXoiLCJuYW1lIjoiSGFucyBBbGV4YW5kZXIiLCJlbWFpbCI6ImhqdWFyZXpAa2luYWwuZWR1Lmd0Iiwicm9sZSI6IlVTRVIiLCJpYXQiOjE3MDkzMTM5MjUsImV4cCI6MTcwOTMyNDcyNX0.rJshi5QC6fzZcD5jL2W2qZM6NVDYC-zkADUEKZzSKkw"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "26b91d69-5e18-4afe-889d-85d425594c12",
+            "colId": "6a8071b3-f560-4378-9df8-f1141b0a8eb6",
+            "containerId": "6993e8ed-42b7-4c70-acab-a5d7b0533f81",
+            "name": "update",
+            "url": "/comment/update/65e2541bbaff45d42bae3f76",
+            "method": "PUT",
+            "sortNum": 80000,
+            "created": "2024-03-01T19:37:40.495Z",
+            "modified": "2024-03-01T23:14:58.942Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "content",
+                        "value": "jaja"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "e742f926-3286-4ede-9b40-f4ead46a9765",
+            "colId": "6a8071b3-f560-4378-9df8-f1141b0a8eb6",
+            "containerId": "8f8d791e-8d04-4b8a-9964-d613b49355a3",
+            "name": "update",
+            "url": "/Post/update/65e26c9b0fcde32f9969dde9",
+            "method": "PUT",
+            "sortNum": 90000,
+            "created": "2024-03-01T19:39:21.259Z",
+            "modified": "2024-03-02T00:07:22.875Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxNWFhNmUwOTU0OGJiMTgyN2YxOTQiLCJ1c2VybmFtZSI6ImhqdWFyZXoiLCJuYW1lIjoiSGFucyIsImVtYWlsIjoiaGp1YXJlekBnbWFpbC5jb20iLCJyb2xlIjoiVVNFUiIsImlhdCI6MTcwOTMzMTMzNywiZXhwIjoxNzA5MzQyMTM3fQ.Ix27rhSw2BUY8M-xfeUVS-AkGzKhDMnK8QMIJ2-KZwg"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "title",
+                        "value": "Ofertas del año 2024"
+                    },
+                    {
+                        "name": "category",
+                        "value": "destaca nuestras nuevas ofertas"
+                    },
+                    {
+                        "name": "content",
+                        "value": "Por un período de tiempo limitado, estamos ofreciendo ACCESO DE POR VIDA a Doodly por un PAGO ÚNICO DE $67 (Precio regular: $468/año)"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "ff523dbe-1962-4d70-878a-76fcb25febf5",
+            "colId": "6a8071b3-f560-4378-9df8-f1141b0a8eb6",
+            "containerId": "6993e8ed-42b7-4c70-acab-a5d7b0533f81",
+            "name": "delete",
+            "url": "/comment/delete/65e2541bbaff45d42bae3f76",
+            "method": "DELETE",
+            "sortNum": 100000,
+            "created": "2024-03-01T23:18:38.602Z",
+            "modified": "2024-03-01T23:29:20.579Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "09672cab-0773-40ae-a8fe-9bd99e7ea620",
+            "colId": "6a8071b3-f560-4378-9df8-f1141b0a8eb6",
+            "containerId": "3d4ae158-a725-4991-be3a-72fc33814c69",
+            "name": "save",
+            "url": "/category/register",
+            "method": "POST",
+            "sortNum": 110000,
+            "created": "2024-03-01T23:15:37.167Z",
+            "modified": "2024-03-01T23:17:54.463Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "computación"
+                    },
+                    {
+                        "name": "description",
+                        "value": "Las mejores compuadoras"
+                    }
+                ]
+            },
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "localhost:2657"
+        }
+    }
+}
